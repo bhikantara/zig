@@ -1,8 +1,14 @@
+Selamat datang di langkah pertama Anda dalam mempelajari bahasa pemrograman Zig. Panduan ini dirancang untuk menuntun Anda sepenuhnya dari awal, mulai dari menyiapkan ruang kerja, membuat berkas pertama, hingga memahami cara kerja kode secara mendetail. Seluruh penjelasan disajikan dalam bentuk narasi yang mengalir dan sederhana agar mudah dipahami oleh pemula, namun tetap mempertahankan kejelasan teknis yang dibutuhkan oleh pemrogram berpengalaman.
+
+---
+
+## 1. Menyiapkan Ruang Kerja
+
 Sebelum mulai menulis kode, langkah awal yang harus dilakukan adalah menyiapkan ruang kerja atau *workspace* secara manual agar lebih sederhana. Buka terminal komputer Anda, lalu buat sebuah folder baru dengan menjalankan perintah `mkdir hello_world` dan masuk ke dalamnya menggunakan perintah `cd hello_world`. Setelah berada di dalam folder tersebut, buatlah sebuah berkas kosong baru dan beri nama `main.zig`. Berkas tunggal inilah yang akan menjadi tempat kita menulis seluruh kode dan bertindak sebagai titik awal eksekusi program Anda.
 
 ---
 
-## 1. Menulis Kode Pertama Anda
+## 2. Menulis Kode Pertama Anda
 
 Untuk mulai bereksperimen, buka berkas `main.zig` yang baru saja Anda buat menggunakan editor teks pilihan Anda (seperti VS Code atau Notepad). Karena berkas tersebut masih kosong, silakan tulis atau salin baris kode sederhana di bawah ini untuk mencetak kalimat sapaan ke layar terminal:
 
@@ -17,7 +23,7 @@ pub fn main() !void {
 
 ---
 
-## 2. Memahami Baris demi Baris
+## 3. Memahami Baris demi Baris
 
 Mari kita bedah struktur kode di atas secara berurutan agar Anda dapat memahami fungsinya dengan mudah. Kode diawali dengan baris `const std = @import("std");` yang berfungsi untuk memanggil pustaka standar bawaan Zig, lalu menyimpannya ke dalam sebuah variabel konstan bernama `std` agar fiturnya bisa kita gunakan.
 
@@ -27,7 +33,7 @@ Di dalam fungsi utama tersebut, terdapat perintah `std.debug.print` yang kita gu
 
 ---
 
-## 3. Cara Menjalankan Program
+## 4. Cara Menjalankan Program
 
 Karena kita menggunakan struktur proyek tunggal yang sangat minimalis tanpa berkas konfigurasi tambahan yang rumit, cara menjalankan programnya pun sangat mudah. Buka kembali terminal Anda, pastikan Anda masih berada di dalam folder `hello_world`, lalu jalankan perintah `zig run main.zig`.
 
