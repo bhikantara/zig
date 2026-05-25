@@ -1,0 +1,15 @@
+site_name: Study
+
+theme:
+  name: readthedocs
+  highlightjs: true
+  fail_on_warning: false
+  logo: img/logo.png
+
+extra_css:
+  - css/custom.css
+
+nav:
+  - Home: index.md
+  - Basic: basic.md
+  - Keywords: keyword.md
